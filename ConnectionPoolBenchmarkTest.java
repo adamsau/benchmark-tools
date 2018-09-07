@@ -76,7 +76,7 @@ public class ConnectionPoolBenchmarkTest {
 
 								Connection con = dataSource.getConnection();
 
-								new QuestionDao(con).exists("");
+								new Dao(con).findById("");
 
 								con.close();
 
